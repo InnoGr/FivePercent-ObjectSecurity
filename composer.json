@@ -1,0 +1,30 @@
+{
+    "name": "fivepercent/object-security",
+    "description": "Adds common security to you system.",
+    "keywords": [ "security", "method security", "class security", "property security" ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitaliy Zhuk",
+            "email": "zhuk2205@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.4",
+        "fivepercent/cache": "~1.0",
+        "fivepercent/reflection": "~1.0",
+        "fivepercent/exception": "~1.0",
+        "symfony/expression-language": "~2.4"
+    },
+
+    "suggest": {
+        "symfony/property-access": "For get argument value via PropertyAccessor",
+        "symfony/security": "For check access granted via Symfony Security Rule Voter"
+    },
+
+    "autoload": {
+        "psr-4": { "FivePercent\\Component\\ObjectSecurity\\": "src/" }
+    }
+}
